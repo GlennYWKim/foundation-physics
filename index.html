@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Foundational Physics for the HSC</title>
-    <meta name="description" content="A textbook for the NSW Year 12 HSC Physics course.">
-    <meta name="keywords" content="HSC Physics, NSW Physics, Year 12, textbook, foundational physics, Glenn Kim, physics">
-    <meta name="author" content="Glenn Y.W. Kim">
+    <meta name="description" content="A textbook for the NSW Year 12 HSC Physics course." />
+    <meta name="keywords" content="HSC Physics, NSW Physics, Year 12, textbook, foundational physics, Glenn Kim, physics" />
+    <meta name="author" content="Glenn Y.W. Kim" />
     <meta name="google-site-verification" content="8eE_l9reXvksEhe9_2Cu9Mn-Li0u9uo_T3IRLNielr0" />
     <style>
         body {
@@ -34,10 +34,12 @@
 
         iframe {
             margin-top: 30px;
-            width: 100%;
+            width: 100vw; /* full viewport width */
             height: 80vh;
             border: 1px solid #ccc;
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            margin-left: calc(-50vw + 50%);
+            max-width: 100vw;
         }
 
         a.download {
@@ -54,8 +56,8 @@
         <h1>Foundational Physics for the HSC</h1>
         <p>By Glenn Y.W. Kim — 2025 Edition</p>
         <p>A free textbook for Year 12 HSC Physics students in New South Wales. Viewable below, or <a class="download" href="Foundational_Physics_for_the_HSC.pdf" download>click here to download the PDF</a>.</p>
-        
-        <iframe src="Foundational_Physics_for_the_HSC.pdf"></iframe>
     </div>
+
+    <iframe src="Foundational_Physics_for_the_HSC.pdf"></iframe>
 </body>
 </html>
