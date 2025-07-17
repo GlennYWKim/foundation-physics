@@ -1,63 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Foundational Physics for the HSC</title>
-    <meta name="description" content="A textbook for the NSW Year 12 HSC Physics course." />
-    <meta name="keywords" content="HSC Physics, NSW Physics, Year 12, textbook, foundational physics, Glenn Kim, physics" />
-    <meta name="author" content="Glenn Y.W. Kim" />
-    <meta name="google-site-verification" content="8eE_l9reXvksEhe9_2Cu9Mn-Li0u9uo_T3IRLNielr0" />
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundational Physics for the HSC</title>
+  <meta name="description" content="A textbook for the NSW Year 12 HSC Physics course." />
+  <meta name="keywords" content="HSC Physics, NSW Physics, Year 12, textbook, foundational physics, Glenn Kim, physics" />
+  <meta name="author" content="Glenn Y.W. Kim" />
+  <meta name="google-site-verification" content="8eE_l9reXvksEhe9_2Cu9Mn-Li0u9uo_T3IRLNielr0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
+  <style>
 
-        h1 {
-            font-size: 2em;
-            margin-bottom: 0.2em;
-        }
+    /*These are mostly simmilar just a few small changes to desing*/
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
 
-        p {
-            font-size: 1em;
-            color: #555;
-        }
+    .header {
+      /*This colour is the green from the front page of the textbox and can be changed to anything*/
+      /*The best other option would probably be the red throughout the rest of the textbook to give a consistent theme but it doesnt matter that much*/
+      background: #1B4D47;
+      padding: 80px 20px 60px;
+      text-align: center;
+      color: white;
+    }
 
-        iframe {
-            margin-top: 30px;
-            width: 100vw; /* full viewport width */
-            height: 80vh;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
-            margin-left: calc(-50vw + 50%);
-            max-width: 100vw;
-        }
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 600;
+      margin: 0;
+    }
 
-        a.download {
-            display: inline-block;
-            margin-top: 1em;
-            font-size: 1em;
-            color: #007bff;
-            text-decoration: none;
-        }
-    </style>
+    .header p {
+      margin-top: 14px;
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    /*This is for the note box and download link section*/
+    .content {
+      max-width: 90%;
+      margin: 60px auto 30px;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .note-box {
+      background-color: #eef1f3;
+      border-left: 4px solid #1B4D47;
+      padding: 20px 24px;
+      margin-bottom: 30px;
+      font-size: 1.05rem;
+      border-radius: 8px;
+      color: #333;
+    }
+
+    .note-box strong {
+      font-weight: 500;
+    }
+
+    .download-link {
+      color:#1B4D47;
+    }
+
+    .download-link:hover {
+      color: black;
+      font-weight:300;
+    }
+
+    /*I adjusted the dimensions of the pdf display it can be changed back but just looks a little more put together*/
+    .pdf-viewer {
+      display: block;
+      margin: 40px auto;
+      width: 90%;
+      height: 100vh;
+      border: none;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+    }
+
+    /*No idea if this is something you want feel free to delete if it doesnt make sense*/
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #888;
+      background-color: #ececec;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Foundational Physics for the HSC</h1>
-        <p>By Glenn Y.W. Kim — First Edition</p>
-        <p>A free textbook for Year 12 HSC Physics students in New South Wales. Viewable below, or <a class="download" href="Foundational_Physics_for_the_HSC.pdf" download>click here to download the PDF</a>.</p>
-    </div>
 
-    <iframe src="Foundational_Physics_for_the_HSC.pdf"></iframe>
+  <header class="header">
+    <h1>Foundational Physics for the HSC</h1>
+    <p>By Glenn Y.W. Kim — First Edition</p>
+  </header>
+
+  <!--The design on this was changed to display the link -->
+  <section class="content">
+    <div class="note-box">
+      <strong>This textbook is available free of charge</strong> for all students and teachers preparing for the NSW HSC Physics course. Click here to <a class="download-link" href="Foundational_Physics_for_the_HSC.pdf" download> Download the PDF</a>
+    </div>
+    
+  </section>
+
+  <iframe class="pdf-viewer" src="Foundational_Physics_for_the_HSC.pdf"></iframe>
+
+  <footer>
+    &copy; 2025 Glenn Y.W. Kim. All rights reserved.
+  </footer>
+
 </body>
 </html>
