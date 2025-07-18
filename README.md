@@ -1,2 +1,3 @@
 # Foundational Physics for the HSC
-## By Glenn Kim
+## By Glenn Y.W. Kim
+### Web Design by Glenn Y.W. Kim and C.W.
